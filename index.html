@@ -175,13 +175,14 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
+                    <form action="https://formspree.io/f/xleoaqnl" method="POST" class="contact__form">
                         <input type="text" placeholder="Full Name" class="contact__input">
-                        <input type="text" placeholder="Your e-mail" class="contact__input">
+                        <input type="email" placeholder="Your e-mail" class="contact__input email">
                         <input type="text" placeholder="Subject" class="contact__input">
-                        <textarea id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <textarea cols="0" rows="10" class="contact__input"></textarea>
+                        <div class="status"></div>
 
-                        <input type="button" value="Send" class="contact__button button">
+                        <button type="submit" class="contact__button button submit">Send E-mail</button>
                     </form>
                 </div>
             </section>
@@ -201,6 +202,7 @@
             <p class="text__size">&#169; copyright all right reserved</p>
         </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
         <!-- === SCROOL REVEAL === -->
         <script src="https://unpkg.com/scrollreveal"></script>
         <!-- === MAIN JAVASCRIPT === -->

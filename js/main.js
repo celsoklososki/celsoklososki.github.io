@@ -58,3 +58,22 @@ sr.reveal('.work__img',{interval: 200})
 /* === SCROLL CONTACT === */
 sr.reveal('.contact__input',{interval: 200})
 sr.reveal('.button',{interval: 200})
+
+
+/* === SEND EMAIL === */
+$(document).ready(function(){
+    $('.submit').click(function(event){
+        event.preventDefault()
+        console.log('Clicked button')
+
+        var email = $('.email').val()
+        var statusElm = $('.status')
+
+        if(email.includes('@') && email.includes('.')){
+            console.log('Email is valid')
+        }else{
+            console.log('Email is not valid')
+            statusElm.append('<div>Email is not valid</div>')
+        }
+    })
+});
