@@ -63,7 +63,6 @@ sr.reveal('.button',{interval: 200})
 /* === SEND EMAIL === */
 $(document).ready(function(){
     $('.submit').click(function(event){
-        event.preventDefault()
         console.log('Clicked button')
 
         var email = $('.email').val()
@@ -72,6 +71,7 @@ $(document).ready(function(){
         if(email.includes('@') && email.includes('.')){
             console.log('Email is valid')
         }else{
+            event.preventDefault()
             console.log('Email is not valid')
             statusElm.append('<div>Email is not valid</div>')
         }
