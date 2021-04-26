@@ -255,7 +255,7 @@ img{
     border-radius: .5rem;
 }
 
-/* === ABOUT ME === */
+/* === SKILLS === */
 .skills__container{
     row-gap: 2rem;
     text-align: center;
@@ -307,14 +307,17 @@ img{
 .skills__sql{
     width: 65%;
 }
-.skills__ui-ux{
+.skills__react{
     width: 70%;
+}
+.skills__php{
+    width: 75%;
 }
 .skills__img{
     border-radius: .5rem;
 }
 
-/* === PORTIFOLIO === */
+/* === PORTIFOLIO AND SCHOOL PROJECTS === */
 .work{
     text-align: center;
 }
